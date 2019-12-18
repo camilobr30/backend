@@ -7,7 +7,8 @@ const PORT = process.env.PORT || 4000
 
 app.use(express.urlencoded({extended: true})) // para recibir archivos media(audio,video,img)
 
-app.use(express.json()) // devuelve toda la información en formato JSON y me permite usar body de express
+app.use(express.json()) // devuelve toda la información en formato JSON y me permite usar body de express1
+app.use(cors())
 
 
 // Veifico que este activo
